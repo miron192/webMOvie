@@ -11,6 +11,7 @@ const MoviesAndSeries = async ({ searchParams }: HomeProps) => {
   );
 
   const result = await response.json();
+  console.log(result);
 
   return (
     <div className="flex gap-5 flex-col">

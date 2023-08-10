@@ -6,7 +6,7 @@ type Props = {
 
 const Movie = async ({ params }: Props) => {
   const response = await fetch(
-    `https://www.omdbapi.com/?apikey=36859a9a&i=${params.id}`
+    `https://www.omdbapi.com/?apikey=${process.env.NEXT_PUBLIC_OMDb_KEY}&i=${params.id}`
   );
 
   const result = await response.json();
