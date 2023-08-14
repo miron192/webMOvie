@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const ShowMore = () => {
   const router = useRouter();
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber, setPageNumber] = useState(2);
 
   const handleNavigation = () => {
     setPageNumber((prev) => prev + 1);
